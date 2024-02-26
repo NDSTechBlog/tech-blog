@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "NDS Tech Blog",
-    image: "/nds_logo_fixed.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/nds_logo_fixed.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "NDS",
     bio: "IT로 건강한 미래를 만들어나갑니다.",
     email: "nds37371@gmail.com",
@@ -11,10 +11,10 @@ const CONFIG = {
     instagram: "",
   },
   projects: [
-    // {
-    //   name: `tech-blog`,
-    //   href: "https://github.com/NDSTechBlog/tech-blog",
-    // },
+    {
+      name: `NDS`,
+      href: "https://nds.nongshim.co.kr/main.do",
+    },
   ],
   // blog setting (required)
   blog: {
