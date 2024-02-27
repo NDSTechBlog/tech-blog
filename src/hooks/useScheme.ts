@@ -23,7 +23,7 @@ const useScheme = (): [Scheme, SetScheme] => {
     // document.querySelector(".logo-img")?.setAttribute("color", scheme == "light" ? "white" : "black")
     // document.querySelector(".logo-img")?.setAttribute("fill", "currentColor");
     // document.querySelector(".profile-img")?.setAttribute("color", scheme == "light" ? "white" : "black")
-    document.querySelector(".profile-img")?.setAttribute("fill", scheme == "light" ? "white" : "black")
+    document.querySelector(".profile-img svg")?.setAttribute("fill", scheme == "light" ? "white" : "black")
 
 
     queryClient.setQueryData(queryKey.scheme(), scheme)
