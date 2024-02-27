@@ -1,6 +1,7 @@
 # *
 User-agent: *
-Allow: /
+Disallow: /
+# Allow: /
 
 # Host
 Host: https://morethan-log.vercel.app
