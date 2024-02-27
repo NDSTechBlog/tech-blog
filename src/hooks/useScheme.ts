@@ -21,7 +21,7 @@ const useScheme = (): [Scheme, SetScheme] => {
     setCookie("scheme", scheme)
     
     // document.querySelector(".logo-img")?.setAttribute("color", scheme == "light" ? "white" : "black")
-    document.querySelector(".logo-img")?.setAttribute("fill", "currentColor");
+    // document.querySelector(".logo-img")?.setAttribute("fill", "currentColor");
 
     queryClient.setQueryData(queryKey.scheme(), scheme)
   }
