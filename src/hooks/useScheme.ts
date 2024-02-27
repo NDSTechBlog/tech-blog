@@ -20,7 +20,9 @@ const useScheme = (): [Scheme, SetScheme] => {
   const setScheme = (scheme: "light" | "dark") => {
     setCookie("scheme", scheme)
     
-    document.querySelector(".css-79elbk")?.setAttribute("color", scheme == "light" ? "white" : "black")
+    // document.querySelector(".logo-img")?.setAttribute("color", scheme == "light" ? "white" : "black")
+    document.querySelector(".logo-img")?.setAttribute("fill", "currentColor");
+
     queryClient.setQueryData(queryKey.scheme(), scheme)
   }
 
