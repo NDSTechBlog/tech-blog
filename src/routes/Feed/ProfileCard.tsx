@@ -17,7 +17,7 @@ const ProfileCard: React.FC<Props> = () => {
       </div>
       <div className="content">
         <div className="top logo-img">
-          <Image src={scheme === "light" ? CONFIG.profile.image : CONFIG.profile.imageDark} fill alt="" className="logo-img-comp" />
+          <Image src={scheme === "light" ? CONFIG.profile.image : CONFIG.profile.imageDark} fill alt="" style={{width: "140px", height: "auto", position: "static"}} />
         </div>
         <div className="mid">
           <div className=" name">{CONFIG.profile.name}</div>
@@ -52,7 +52,9 @@ const StyledWrapper = styled.div`
       position: relative;
       width: 100%;
       &.logo-img {
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       &:after {
         content: "";
