@@ -3,10 +3,13 @@ import Image from "next/image"
 import React from "react"
 import styled from "@emotion/styled"
 import { Emoji } from "src/components/Emoji"
+import useScheme from "src/hooks/useScheme"
 
 type Props = {}
 
 const ProfileCard: React.FC<Props> = () => {
+  const [scheme] = useScheme();
+
   return (
     <StyledWrapper>
       <div className="title">
@@ -14,7 +17,7 @@ const ProfileCard: React.FC<Props> = () => {
       </div>
       <div className="content">
         <div className="top logo-img">
-          <Image src={CONFIG.profile.image} fill alt="" style={{width: "140px", height: "auto", position: "static"}} />
+          <Image src={scheme === "light" ? CONFIG.profile.image : CONFIG.profile.imageDark} fill alt="" className="logo-img-comp" />
         </div>
         <div className="mid">
           <div className=" name">{CONFIG.profile.name}</div>
@@ -49,9 +52,7 @@ const StyledWrapper = styled.div`
       position: relative;
       width: 100%;
       &.logo-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
       }
       &:after {
         content: "";
