@@ -19,7 +19,8 @@ const useScheme = (): [Scheme, SetScheme] => {
 
   const setScheme = (scheme: "light" | "dark") => {
     setCookie("scheme", scheme)
-
+    
+    document.querySelector(".css-79elbk")?.setAttribute("color", scheme == "light" ? "white" : "black";)
     queryClient.setQueryData(queryKey.scheme(), scheme)
   }
 
