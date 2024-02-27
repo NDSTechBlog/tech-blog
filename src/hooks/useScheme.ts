@@ -19,6 +19,14 @@ const useScheme = (): [Scheme, SetScheme] => {
 
   const setScheme = (scheme: "light" | "dark") => {
     setCookie("scheme", scheme)
+    
+    // document.querySelector(".logo-img")?.setAttribute("color", scheme == "light" ? "white" : "black")
+    // document.querySelector(".logo-img")?.setAttribute("fill", "currentColor");
+    // document.querySelector(".profile-img")?.setAttribute("color", scheme == "light" ? "white" : "black")
+    // document.querySelector(".profile-img")?.setAttribute("fill", scheme == "light" ? "white" : "black")
+    document.querySelector(".profile-img")?.setAttribute("filter", scheme == "light" ? "brightness(0%)" : "brightness(100%)")
+
+
 
     queryClient.setQueryData(queryKey.scheme(), scheme)
   }
