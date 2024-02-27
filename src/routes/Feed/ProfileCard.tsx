@@ -13,7 +13,7 @@ const ProfileCard: React.FC<Props> = () => {
         <Emoji>💻</Emoji> Profile
       </div>
       <div className="content">
-        <div className="top">
+        <div className="top logo-img">
           <Image src={CONFIG.profile.image} fill alt="" style={{width: "140px", height: "auto", position: "static"}} />
         </div>
         <div className="mid">
@@ -48,6 +48,11 @@ const StyledWrapper = styled.div`
     .top {
       position: relative;
       width: 100%;
+      &.logo-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       &:after {
         content: "";
         display: block;
