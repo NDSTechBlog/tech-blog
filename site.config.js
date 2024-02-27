@@ -4,7 +4,7 @@ const CONFIG = {
     name: "NDS Tech Blog",
     image: "/nds_logo_fixed.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "NDS",
-    bio: "IT로 건강한 미래를 만들어나갑니다.",
+    bio: "NDS는 농심 그룹의 정보시스템을 개발∙운영해온 전산실을 모태로 설립하였으며, 다양한 프로젝트 경험과 축적된 기술 및 노하우를 바탕으로 최적의 IT서비스를 제공하는 기업입니다.",
     email: "nds37371@gmail.com",
     linkedin: "",
     github: "nds37371@gmail.com",
