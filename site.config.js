@@ -12,7 +12,7 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `NDS`,
+      name: `NDS 홈페이지`,
       href: "https://nds.nongshim.co.kr/main.do",
     },
   ],
