@@ -2,19 +2,22 @@ import { CONFIG } from "site.config"
 import Image from "next/image"
 import React from "react"
 import styled from "@emotion/styled"
+import useScheme from "src/hooks/useScheme"
 
 type Props = {
   className?: string
 }
 
 const MobileProfileCard: React.FC<Props> = () => {
+  const [scheme] = useScheme();
+
   return (
     <StyledWrapper>
       <div className="top">💻 Profile</div>
       <div className="mid">
         <div className="wrapper">
           <Image
-            src={CONFIG.profile.image}
+            src={scheme === "light" ? CONFIG.profile.image : CONFIG.profile.imageDark}
             width={90}
             height={90}
             css={{ position: "relative" }}
