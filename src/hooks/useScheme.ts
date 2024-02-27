@@ -24,7 +24,7 @@ const useScheme = (): [Scheme, SetScheme] => {
     // document.querySelector(".logo-img")?.setAttribute("fill", "currentColor");
     // document.querySelector(".profile-img")?.setAttribute("color", scheme == "light" ? "white" : "black")
     // document.querySelector(".profile-img")?.setAttribute("fill", scheme == "light" ? "white" : "black")
-    document.querySelector(".profile-img")?.setAttribute("filter", scheme == "light" ? "brightness(100%)" : "brightness(0%)")
+    document.querySelector(".profile-img")?.setAttribute("filter", scheme == "light" ? "brightness(0%)" : "brightness(100%)")
 
 
 
