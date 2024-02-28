@@ -10,7 +10,7 @@ const Logo = () => {
   return (
     <StyledWrapper href="/" aria-label={CONFIG.blog.title}>
       {/* {CONFIG.blog.title} */}
-      <Image src={scheme === "light" ? CONFIG.blog.titleImage : CONFIG.blog.titleImageDark} fill alt="" style={{ width: "200px", height: "auto" }} />
+      <Image src={scheme === "light" ? CONFIG.blog.titleImage : CONFIG.blog.titleImageDark} fill alt="" style={{ width: "170px", height: "auto", position: "static" }} />
     </StyledWrapper>
   )
 }
